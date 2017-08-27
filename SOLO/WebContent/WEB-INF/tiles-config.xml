@@ -3,8 +3,15 @@
 <tiles-definitions>
 	<definition name="notice_layout" template="/WEB-INF/template/notice_template.jsp">
 		<put-attribute name="header" value="/WEB-INF/view/noticeboard/notice_header.jsp"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/view/noticeboard/notice_header.jsp"></put-attribute>
 		<put-attribute name="footer" value="/WEB-INF/view/noticeboard/notice_footer.jsp"></put-attribute>
 	</definition>
+	<definition name="p:*/*/*" template="/WEB-INF/view/mainview/home.jsp">
+		<put-attribute name="header" value="/WEB-INF/view/tiles_header/{1}.jsp"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/view/tiles_body/{2}.jsp"></put-attribute>
+		<put-attribute name="footer" value="/WEB-INF/view/tiles_footer/{3}.jsp"></put-attribute>
+	</definition>
+	
 	
 	<definition name="t:*/*/*" extends="notice_layout">
 		<put-attribute name="body" value="/WEB-INF/{1}/{2}/{3}.jsp"/>
