@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="notice_layout" template="/WEB-INF/template/notice_template.jsp">
+		<put-attribute name="header" value="/WEB-INF/view/noticeboard/notice_header.jsp"></put-attribute>
+		<put-attribute name="footer" value="/WEB-INF/view/noticeboard/notice_footer.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="t:*/*/*" extends="notice_layout">
+		<put-attribute name="body" value="/WEB-INF/{1}/{2}/{3}.jsp"/>
+	</definition>
+		
+	<definition name="t:*/*" template="/WEB-INF/view/{1}/{2}.jsp"/>
+		
+	<definition name="t:test" template="/WEB-INF/view/mainview/any_Test.jsp"/>
+	
+	<definition name="t:indexTest" template="/WEB-INF/view/template_indexTest/t_i_body.jsp"/>
+</tiles-definitions>
