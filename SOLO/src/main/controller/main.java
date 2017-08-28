@@ -9,7 +9,7 @@ public class main {
 	@RequestMapping("/")
 	public ModelAndView home() {
 		ModelAndView mav = new ModelAndView();
-		mav.setViewName("t:mainview/main");			
+		mav.setViewName("p:body");			
 		return mav;
 	}
 	

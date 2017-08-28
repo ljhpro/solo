@@ -11,6 +11,11 @@
 		<put-attribute name="body" value="/WEB-INF/view/tiles_body/{2}.jsp"></put-attribute>
 		<put-attribute name="footer" value="/WEB-INF/view/tiles_footer/{3}.jsp"></put-attribute>
 	</definition>
+	<definition name="p:*" template="/WEB-INF/view/mainview/main.jsp">
+		
+		<put-attribute name="body" value="/WEB-INF/view/tiles_body/{1}.jsp"></put-attribute>
+		
+	</definition>
 	
 	
 	<definition name="t:*/*/*" extends="notice_layout">
