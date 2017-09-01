@@ -13,16 +13,22 @@ public class main {
 		return mav;
 	}
 	
-	@RequestMapping("/start")
+	@RequestMapping("/")
 	public ModelAndView home2() {
 		ModelAndView mav = new ModelAndView();
 		mav.setViewName("p:header/body/footer");			
 		return mav;
 	}
-	@RequestMapping("/")
+	@RequestMapping("/1")
 	public ModelAndView home3() {
 		ModelAndView mav = new ModelAndView();
 		mav.setViewName("p:header/1/footer");			
+		return mav;
+	}
+	@RequestMapping("/2")
+	public ModelAndView home4() {
+		ModelAndView mav = new ModelAndView();
+		mav.setViewName("p:header/2/footer");			
 		return mav;
 	}
 
