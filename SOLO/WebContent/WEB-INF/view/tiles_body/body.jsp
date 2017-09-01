@@ -5,114 +5,67 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 
-<div class="wrapper">
-		<div class="header header-filter" style="background-image: url('img/examples/city.jpg');"></div>
-
-		<div class="main main-raised">
-			<div class="profile-content">
-	            <div class="container">
-	                <div class="row">
-	                    <div class="profile">
-	                        <div class="avatar">
-	                            <img src="img/christian.jpg" alt="Circle Image" class="img-circle img-responsive img-raised">
-	                        </div>
-	                        <div class="name">
-	                            <h3 class="title">Christian Louboutin</h3>
-								<h6>Designer</h6>
-	                        </div>
-	                    </div>
-	                </div>
-	                <div class="description text-center">
-                        <p>An artist of considerable range, Chet Faker — the name taken by Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs and records all of his own music, giving it a warm, intimate feel with a solid groove structure. </p>
-	                </div>
-
-					<div class="row">
-						<div class="col-md-6 col-md-offset-3">
-							<div class="profile-tabs">
-			                    <div class="nav-align-center">
-									<ul class="nav nav-pills" role="tablist">
-										<li class="active">
-											<a href="#studio" role="tab" data-toggle="tab">
-												<i class="material-icons">camera</i>
-												Studio
-											</a>
-										</li>
-										<li>
-				                            <a href="#work" role="tab" data-toggle="tab">
-												<i class="material-icons">palette</i>
-												Work
-				                            </a>
-				                        </li>
-				                        <li>
-				                            <a href="#shows" role="tab" data-toggle="tab">
-												<i class="material-icons">favorite</i>
-				                                Favorite
-				                            </a>
-				                        </li>
-				                    </ul>
-
-				                    <div class="tab-content gallery">
-										<div class="tab-pane active" id="studio">
-				                            <div class="row">
-												<div class="col-md-6">
-													<img src="img/examples/chris1.jpg" class="img-rounded" />
-													<img src="img/examples/chris0.jpg" class="img-rounded" />
-												</div>
-												<div class="col-md-6">
-													<img src="img/examples/chris3.jpg" class="img-rounded" />
-													<img src="img/examples/chris4.jpg" class="img-rounded" />
-												</div>
-				                            </div>
-				                        </div>
-				                        <div class="tab-pane text-center" id="work">
-											<div class="row">
-												<div class="col-md-6">
-													<img src="examples/chris5.jpg" class="img-rounded" />
-													<img src="img/examples/chris7.jpg" class="img-rounded" />
-													<img src="img/examples/chris9.jpg" class="img-rounded" />
-												</div>
-												<div class="col-md-6">
-													<img src="img/examples/chris6.jpg" class="img-rounded" />
-													<img src="img/examples/chris8.jpg" class="img-rounded" />
-												</div>
-											</div>
-				                        </div>
-										<div class="tab-pane text-center" id="shows">
-											<div class="row">
-												<div class="col-md-6">
-													<img src="img/examples/chris4.jpg" class="img-rounded" />
-													<img src="img/examples/chris6.jpg" class="img-rounded" />
-												</div>
-												<div class="col-md-6">
-													<img src="img/examples/chris7.jpg" class="img-rounded" />
-													<img src="img/examples/chris5.jpg" class="img-rounded" />
-													<img src="img/examples/chris9.jpg" class="img-rounded" />
-												</div>
-											</div>
-				                        </div>
-
-				                    </div>
-								</div>
-							</div>
-							<!-- End Profile Tabs -->
-						</div>
-	                </div>
-
-	            </div>
-	        </div>
-		</div>
-
+<div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-preview">
+            <a href="post.html">
+              <h2 class="post-title">
+                Man must explore, and this is exploration at its greatest
+              </h2>
+              <h3 class="post-subtitle">
+                Problems look mighty small from 150 miles up
+              </h3>
+            </a>
+            <p class="post-meta">Posted by
+              <a href="#">Start Bootstrap</a>
+              on September 24, 2017</p>
+          </div>
+          <hr>
+          <div class="post-preview">
+            <a href="post.html">
+              <h2 class="post-title">
+                I believe every human has a finite number of heartbeats. I don't intend to waste any of mine.
+              </h2>
+            </a>
+            <p class="post-meta">Posted by
+              <a href="#">Start Bootstrap</a>
+              on September 18, 2017</p>
+          </div>
+          <hr>
+          <div class="post-preview">
+            <a href="post.html">
+              <h2 class="post-title">
+                Science has not yet mastered prophecy
+              </h2>
+              <h3 class="post-subtitle">
+                We predict too much for the next year and yet far too little for the next ten.
+              </h3>
+            </a>
+            <p class="post-meta">Posted by
+              <a href="#">Start Bootstrap</a>
+              on August 24, 2017</p>
+          </div>
+          <hr>
+          <div class="post-preview">
+            <a href="post.html">
+              <h2 class="post-title">
+                Failure is not an option
+              </h2>
+              <h3 class="post-subtitle">
+                Many say exploration is part of our destiny, but it’s actually our duty to future generations.
+              </h3>
+            </a>
+            <p class="post-meta">Posted by
+              <a href="#">Start Bootstrap</a>
+              on July 8, 2017</p>
+          </div>
+          <hr>
+          <!-- Pager -->
+          <div class="clearfix">
+            <a class="btn btn-secondary float-right" href="#">Older Posts &rarr;</a>
+          </div>
+        </div>
+      </div>
     </div>
-    <script src="js/jquery.min.js" type="text/javascript"></script>
-	<script src="js/bootstrap.min.js" type="text/javascript"></script>
-	<script src="js/material.min.js"></script>
-
-	<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
-	<script src="js/nouislider.min.js" type="text/javascript"></script>
-
-	<!--  Plugin for the Datepicker, full documentation here: http://www.eyecon.ro/bootstrap-datepicker/ -->
-	<script src="js/bootstrap-datepicker.js" type="text/javascript"></script>
-
-	<!-- Control Center for Material Kit: activating the ripples, parallax effects, scripts from the example pages etc -->
-	<script src="js/material-kit.js" type="text/javascript"></script>
 </html>

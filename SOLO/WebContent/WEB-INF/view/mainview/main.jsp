@@ -1,217 +1,186 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
 <%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles"%>
-<head>
-	<meta charset="utf-8" />
-	<link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
-	<link rel="icon" type="image/png" href="../assets/img/favicon.png">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<!DOCTYPE html>
+<html>
 
-	<title>Profile Page - Material Kit by Creative Tim</title>
+  <head>
 
-	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-	<!--     Fonts and icons     -->
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+    <title>내가만드는중</title>
 
-	<!-- CSS Files -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
-    <link href="css/material-kit.css" rel="stylesheet"/>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-</head>
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
-<body class="profile-page">
-	<nav class="navbar navbar-transparent navbar-fixed-top navbar-color-on-scroll">
-    	<div class="container">
-        	<!-- Brand and toggle get grouped for better mobile display -->
-        	<div class="navbar-header">
-        		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example">
-            		<span class="sr-only">Toggle navigation</span>
-		            <span class="icon-bar"></span>
-		            <span class="icon-bar"></span>
-		            <span class="icon-bar"></span>
-        		</button>
-        		<a class="navbar-brand" href="http://www.creative-tim.com">Creative Tim</a>
-        	</div>
+    <!-- Custom styles for this template -->
+    <link href="css/clean-blog.min.css" rel="stylesheet">
 
-        	<div class="collapse navbar-collapse" id="navigation-example">
-        		<ul class="nav navbar-nav navbar-right">
-					<li>
-    					<a href="../components-documentation.html" target="_blank">
-    						Components
-    					</a>
-    				</li>
-    				<li>
-						<a href="http://demos.creative-tim.com/material-kit-pro/presentation.html?ref=utp-freebie" target="_blank">
-							<i class="material-icons">unarchive</i> Upgrade to PRO
-						</a>
-    				</li>
-		            <li>
-		                <a href="https://twitter.com/CreativeTim" target="_blank" class="btn btn-simple btn-white btn-just-icon">
-							<i class="fa fa-twitter"></i>
-						</a>
-		            </li>
-		            <li>
-		                <a href="https://www.facebook.com/CreativeTim" target="_blank" class="btn btn-simple btn-white btn-just-icon">
-							<i class="fa fa-facebook-square"></i>
-						</a>
-		            </li>
-					<li>
-		                <a href="https://www.instagram.com/CreativeTimOfficial" target="_blank" class="btn btn-simple btn-white btn-just-icon">
-							<i class="fa fa-instagram"></i>
-						</a>
-		            </li>
-        		</ul>
-        	</div>
-    	</div>
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Start Bootstrap</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="post.html">Sample Post</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
 
-    <div class="wrapper">
-		<div class="header header-filter" style="background-image: url('img/examples/city.jpg');"></div>
-
-		<div class="main main-raised">
-			<div class="profile-content">
-	            <div class="container">
-	                <div class="row">
-	                    <div class="profile">
-	                        <div class="avatar">
-	                            <img src="img/christian.jpg" alt="Circle Image" class="img-circle img-responsive img-raised">
-	                        </div>
-	                        <div class="name">
-	                            <h3 class="title">Christian Louboutin</h3>
-								<h6>Designer</h6>
-	                        </div>
-	                    </div>
-	                </div>
-	                <div class="description text-center">
-                        <p>An artist of considerable range, Chet Faker — the name taken by Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs and records all of his own music, giving it a warm, intimate feel with a solid groove structure. </p>
-	                </div>
-
-					<div class="row">
-						<div class="col-md-6 col-md-offset-3">
-							<div class="profile-tabs">
-			                    <div class="nav-align-center">
-									<ul class="nav nav-pills" role="tablist">
-										<li class="active">
-											<a href="#studio" role="tab" data-toggle="tab">
-												<i class="material-icons">camera</i>
-												Studio
-											</a>
-										</li>
-										<li>
-				                            <a href="#work" role="tab" data-toggle="tab">
-												<i class="material-icons">palette</i>
-												Work
-				                            </a>
-				                        </li>
-				                        <li>
-				                            <a href="#shows" role="tab" data-toggle="tab">
-												<i class="material-icons">favorite</i>
-				                                Favorite
-				                            </a>
-				                        </li>
-				                    </ul>
-
-				                    <div class="tab-content gallery">
-										<div class="tab-pane active" id="studio">
-				                            <div class="row">
-												<div class="col-md-6">
-													<img src="img/examples/chris1.jpg" class="img-rounded" />
-													<img src="img/examples/chris0.jpg" class="img-rounded" />
-												</div>
-												<div class="col-md-6">
-													<img src="img/examples/chris3.jpg" class="img-rounded" />
-													<img src="img/examples/chris4.jpg" class="img-rounded" />
-												</div>
-				                            </div>
-				                        </div>
-				                        <div class="tab-pane text-center" id="work">
-											<div class="row">
-												<div class="col-md-6">
-													<img src="img/examples/chris5.jpg" class="img-rounded" />
-													<img src="img/examples/chris7.jpg" class="img-rounded" />
-													<img src="img/examples/chris9.jpg" class="img-rounded" />
-												</div>
-												<div class="col-md-6">
-													<img src="img/examples/chris6.jpg" class="img-rounded" />
-													<img src="img/examples/chris8.jpg" class="img-rounded" />
-												</div>
-											</div>
-				                        </div>
-										<div class="tab-pane text-center" id="shows">
-											<div class="row">
-												<div class="col-md-6">
-													<img src="img/examples/chris4.jpg" class="img-rounded" />
-													<img src="img/examples/chris6.jpg" class="img-rounded" />
-												</div>
-												<div class="col-md-6">
-													<img src="img/examples/chris7.jpg" class="img-rounded" />
-													<img src="img/examples/chris5.jpg" class="img-rounded" />
-													<img src="img/examples/chris9.jpg" class="img-rounded" />
-												</div>
-											</div>
-				                        </div>
-
-				                    </div>
-								</div>
-							</div>
-							<!-- End Profile Tabs -->
-						</div>
-	                </div>
-
-	            </div>
-	        </div>
-		</div>
-
-    </div>
-    <footer class="footer">
-        <div class="container">
-            <nav class="pull-left">
-				<ul>
-					<li>
-						<a href="http://www.creative-tim.com">
-							Creative Tim
-						</a>
-					</li>
-					<li>
-						<a href="http://presentation.creative-tim.com">
-						   About Us
-						</a>
-					</li>
-					<li>
-						<a href="http://blog.creative-tim.com">
-						   Blog
-						</a>
-					</li>
-					<li>
-						<a href="http://www.creative-tim.com/license">
-							Licenses
-						</a>
-					</li>
-				</ul>
-            </nav>
-            <div class="copyright pull-right">
-                &copy; 2016, made with <i class="fa fa-heart heart"></i> by Creative Tim
+    <!-- Page Header -->
+    <header class="masthead" style="background-image: url('img/home-bg.jpg')">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="site-heading">
+              <h1>Clean Blog</h1>
+              <span class="subheading">A Blog Theme by Start Bootstrap</span>
             </div>
+          </div>
         </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-preview">
+            <a href="post.html">
+              <h2 class="post-title">
+                Man must explore, and this is exploration at its greatest
+              </h2>
+              <h3 class="post-subtitle">
+                Problems look mighty small from 150 miles up
+              </h3>
+            </a>
+            <p class="post-meta">Posted by
+              <a href="#">Start Bootstrap</a>
+              on September 24, 2017</p>
+          </div>
+          <hr>
+          <div class="post-preview">
+            <a href="post.html">
+              <h2 class="post-title">
+                I believe every human has a finite number of heartbeats. I don't intend to waste any of mine.
+              </h2>
+            </a>
+            <p class="post-meta">Posted by
+              <a href="#">Start Bootstrap</a>
+              on September 18, 2017</p>
+          </div>
+          <hr>
+          <div class="post-preview">
+            <a href="post.html">
+              <h2 class="post-title">
+                Science has not yet mastered prophecy
+              </h2>
+              <h3 class="post-subtitle">
+                We predict too much for the next year and yet far too little for the next ten.
+              </h3>
+            </a>
+            <p class="post-meta">Posted by
+              <a href="#">Start Bootstrap</a>
+              on August 24, 2017</p>
+          </div>
+          <hr>
+          <div class="post-preview">
+            <a href="post.html">
+              <h2 class="post-title">
+                Failure is not an option
+              </h2>
+              <h3 class="post-subtitle">
+                Many say exploration is part of our destiny, but it’s actually our duty to future generations.
+              </h3>
+            </a>
+            <p class="post-meta">Posted by
+              <a href="#">Start Bootstrap</a>
+              on July 8, 2017</p>
+          </div>
+          <hr>
+          <!-- Pager -->
+          <div class="clearfix">
+            <a class="btn btn-secondary float-right" href="#">Older Posts &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <ul class="list-inline text-center">
+              <li class="list-inline-item">
+                <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+            </ul>
+            <p class="copyright text-muted">Copyright &copy; Your Website 2017</p>
+          </div>
+        </div>
+      </div>
     </footer>
 
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
-</body>
-	<!--   Core JS Files   -->
-	<script src="js/jquery.min.js" type="text/javascript"></script>
-	<script src="js/bootstrap.min.js" type="text/javascript"></script>
-	<script src="js/material.min.js"></script>
+    <!-- Custom scripts for this template -->
+    <script src="js/clean-blog.min.js"></script>
 
-	<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
-	<script src="js/nouislider.min.js" type="text/javascript"></script>
-
-	<!--  Plugin for the Datepicker, full documentation here: http://www.eyecon.ro/bootstrap-datepicker/ -->
-	<script src="js/bootstrap-datepicker.js" type="text/javascript"></script>
-
-	<!-- Control Center for Material Kit: activating the ripples, parallax effects, scripts from the example pages etc -->
-	<script src="js/material-kit.js" type="text/javascript"></script>
+  </body>
 
 </html>
