@@ -22,6 +22,7 @@
 			<li class="nav-item"><a class="nav-link" href="/">Contact</a></li>
 			<li class="nav-item">
 			
+			
 			<a class="nav-link " data-toggle="modal" data-target="#logModal" href="">로그인</a>
 			</li>
 			<li class="nav-item">
@@ -54,22 +55,64 @@
  <div class="modal fade" id="joinModal" role="dialog">
     <div class="modal-dialog">
     
-      <!-- Modal content-->
+      <!-- 회원가입 모달 -->
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
           <h4 class="modal-title">회원가입</h4>
         </div>
         <div class="modal-body">
-          <p>Some text in the modal.</p>
+        <form class="form-inline">
+         <div class="form-group">
+         
+  <label for="usr">아이디 :　</label>
+  <div>
+  
+
+      <input class="form-control" id="joinnickname" type="text">
+      <input class="form-control" type="button" value="중복확인" onclick="joinidck()">
+  	<input type="hidden" id="id" value="">
+
+  
+  </div>
+</div>
+<div class="form-group">
+  <label for="name">이름 :　</label>
+  <input type="text" class="form-control" id="joinname">
+</div>
+<div class="form-group">
+  <label for="pwd">비밀번호 :　</label>
+  <input type="password" class="form-control" id="joinpwd">
+</div>
+<div class="form-group">
+  <label for="pwd">비밀번호 확인 :　</label>
+  <input type="password" class="form-control" id="joinpwdck" onclick="joinpwck()" >
+</div>
+<div class="form-group">
+  <label for="phone">휴대폰번호 :　</label>
+  
+  <input type="text" class="form-control" name="cellPhone" id="cellPhone" placeholder="핸드폰 번호 입력" maxlength="13" />
+</div>
+
+
+<div class="form-group">
+  <label for="birth">생년월일 :　</label>
+  <select id="toYear" onchange="updateSelectDate('toYear', 'toMonth', 'toDay');" ></select>년
+<select id="toMonth" onchange="updateSelectDate('toYear', 'toMonth', 'toDay');"></select>월
+<select id="toDay"></select>일
+</div>
         </div>
+        </form>
         <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-default" onclick="join()">회원가입</button>
         </div>
       </div>
       
     </div>
   </div>
+  <!-- 회원가입 모달 끝-->
+  
+  <!-- 로그인 모달 -->
   <div class="modal fade" id="logModal" role="dialog">
     <div class="modal-dialog">
     
@@ -89,5 +132,7 @@
       
     </div>
   </div>
+  <!-- 로그인 모달 끝 -->
 </header>
+<script src="js/B_1.js"></script>
 </html>
