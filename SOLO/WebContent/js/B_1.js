@@ -4,27 +4,21 @@ function joinidck() {
 	
 	if(id.value==""){
 		alert("아이디를 입력해주세요.");
+		
 		id.focus();
 		return;
 	}
 	
 	
-
-
-	
 }
 function joinpwck(){
-	var pw =document.getElementById("joinpwd");
-	if(pw.value==""){
+	var pw =document.getElementById("joinpwd").value;
+	if(pw==""){
 		alert("비밀번호를 입력해 주세요.");
 		pw.focus();
 		return;
 	}
-	if(!/^[a-zA-Z0-9]{8,12}$/.test(pw)){
-		alert('숫자와 영문자 조합으로 8~12자리를 사용해야 합니다.');
-		pw.focus();
-		return false;
-		}
+	
 	var checkNumber = pw.search(/[0-9]/g);
 	var checkEnglish = pw.search(/[a-z]/ig);
 
@@ -38,6 +32,11 @@ function joinpwck(){
 	pw.focus();
 	return false;
 	}
+	if(pw.length < 8 || pw.length > 15){
+		  alert("8자리 ~ 15자리 이내로 입력해주세요.");
+		  return false;
+		 }
+		
 }
 
 function addOptionElement(id, startVal, endVal) {
@@ -159,5 +158,24 @@ var _val = this.value.trim();
 this.value = autoHypenPhone(_val) ;
 }
 function join(){
+	var id= document.getElementById("joinnickname").value;
+	var idck= document.getElementById("idck").value;
+	var name= document.getElementById("joinname").value;
+	var pw= document.getElementById("joinpwd").value;
+	var pwck= document.getElementById("joinpwdck").value;
+	var phone= document.getElementById("cellPhone").value;
+	var birth= document.getElementById("toYear").value +"/"+ document.getElementById("toMonth").value +"/"+ document.getElementById("toMonth").value;
+	 alert(id);
+	$.ajax({
+		"url":"/joinmember?id="+id+"&pw="+pw+"&name="+name+"&phone="+phone+"&birth="+birth,
+		"method":"post"
+	}).done(function(rst) {
+		
+		if(rst=="YYYY") {
+			
+		}else {
+			
+		}
+	})
 	
 }

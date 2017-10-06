@@ -39,7 +39,7 @@
 
 <!-- Page Header -->
 <header class="masthead"
-	style="background-image: url('img/home-bg.jpg')">
+	style="background-image: url('img/Cool Computer HD.jpg')">
 <div class="container">
 	<div class="row">
 		<div class="col-lg-8 col-md-10 mx-auto">
@@ -52,7 +52,7 @@
 		</div>
 	</div>
 </div>
- <div class="modal fade" id="joinModal" role="dialog">
+ <div class="modal fade" id="joinModal" role="dialog" style="font-family:HY고딕medium; line-height:2.2em;">
     <div class="modal-dialog">
     
       <!-- 회원가입 모달 -->
@@ -62,47 +62,49 @@
           <h4 class="modal-title">회원가입</h4>
         </div>
         <div class="modal-body">
-        <form class="form-inline">
+        <form class="form-inline" method="post">
+       
          <div class="form-group">
          
-  <label for="usr">아이디 :　</label>
+  <font size="2.95" style="letter-spacing:1px"><label for="usr">아이디 :　</label></font>
   <div>
   
 
-      <input class="form-control" id="joinnickname" type="text">
-      <input class="form-control" type="button" value="중복확인" onclick="joinidck()">
-  	<input type="hidden" id="id" value="">
+      <input class="form-control" id="joinnickname" type="text" style="height:30px">
+      <input class="form-control" type="button" value="중복확인" onclick="joinidck()" style="height:30px">
+  	<input type="hidden" id="idck" value="">
 
   
   </div>
 </div>
+
 <div class="form-group">
-  <label for="name">이름 :　</label>
-  <input type="text" class="form-control" id="joinname">
+  <font size="2.95" style="letter-spacing:1px"><label for="name">이름 :　</label></font>
+  <input type="text" class="form-control" id="joinname" style="height:30px">
 </div>
 <div class="form-group">
-  <label for="pwd">비밀번호 :　</label>
-  <input type="password" class="form-control" id="joinpwd">
+ <font size="2.95" style="letter-spacing:0px"> <label for="pwd">비밀번호 :　</label></font>
+  <input type="password" class="form-control" id="joinpwd" style="height:30px" placeholder="8~15자리 영어+숫자">
 </div>
 <div class="form-group">
-  <label for="pwd">비밀번호 확인 :　</label>
-  <input type="password" class="form-control" id="joinpwdck" onclick="joinpwck()" >
+  <font size="2.95" style="letter-spacing:0px"><label for="pwd">비밀번호 확인 :　</label></font>
+  <input type="password" class="form-control" id="joinpwdck" onclick="joinpwck()" style="height:30px">
 </div>
 <div class="form-group">
-  <label for="phone">휴대폰번호 :　</label>
+  <font size="2.95" style="letter-spacing:0px"><label for="phone">휴대폰번호 :　</label></font>
   
-  <input type="text" class="form-control" name="cellPhone" id="cellPhone" placeholder="핸드폰 번호 입력" maxlength="13" />
+  <input type="text" class="form-control" name="cellPhone" id="cellPhone" placeholder="핸드폰 번호 입력" maxlength="13" style="height:30px"/>
 </div>
 
 
 <div class="form-group">
-  <label for="birth">생년월일 :　</label>
-  <select id="toYear" onchange="updateSelectDate('toYear', 'toMonth', 'toDay');" ></select>년
-<select id="toMonth" onchange="updateSelectDate('toYear', 'toMonth', 'toDay');"></select>월
-<select id="toDay"></select>일
+  <font size="2.95" style="letter-spacing:0px"><label for="birth">생년월일 :</label></font>
+  <select id="toYear" onchange="updateSelectDate('toYear', 'toMonth', 'toDay');" style="height:30px"></select>년
+<select id="toMonth" onchange="updateSelectDate('toYear', 'toMonth', 'toDay');" style="height:30px"></select>월
+<select id="toDay" style="height:30px"></select>일
 </div>
         </div>
-        </form>
+        
         <div class="modal-footer">
           <button type="button" class="btn btn-default" onclick="join()">회원가입</button>
         </div>
